@@ -1,0 +1,10 @@
+Project Proposal
+MLP vs LLM to Diagnose Depression
+
+Depression is a widespread issue, with a web survey conducted across 133 campuses revealing that 44% of students reported depressive symptoms (1). This project explores the effectiveness of self-implemented neural networks versus modern large language models in diagnosing depression.
+
+As a starting point, we will implement a multilayer perceptron trained and tested on the student-depression-dataset (2). The model will take inputs such as age, gender, city, GPA, sleep duration, work pressure, academic pressure, and more, and output a binary depression status. GPT-4o will be prompted to determine depression status based on the same set of variables. Several pieces of individual data will be fed into GPT-4o, and its decision will be recorded. We will then compare the diagnostic performance of GPT-4o against our multilayer perceptron.
+
+Further, we aim to explore additional datasets such as the the-depression-dataset (3) and student-mental-health (4), to refine our model parameters. For our multilayer perceptron, we plan to experiment with different numbers of layers, neurons per layer, activation functions, and regularization techniques. Additionally, we want to investigate deep learning architectures designed specifically for tabular data, such as TabNet and Node. Time permitting, we will also evaluate other modern LLMs, including Gemini and Claude, while exploring optimal data formatting strategies for these models.
+
+References: https://sph.umich.edu/news/2023posts/college-students-anxiety-depression-higher-than-ever-but-so-are-efforts-to-receive-care.html?utm_source=chatgpt.com https://www.kaggle.com/datasets/hopesb/student-depression-dataset https://www.kaggle.com/datasets/arashnic/the-depression-dataset?utm_source=chatgpt.com https://www.kaggle.com/datasets/shariful07/student-mental-health
